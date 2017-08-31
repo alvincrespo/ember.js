@@ -18,9 +18,41 @@ import { shallowEqual } from '../utils';
    @category ember-routing-router-service
  */
 const RouterService = Service.extend({
+
+  /**
+     Name of the current route.
+
+     @property currentRouteName
+     @type String
+     @public
+   */
   currentRouteName: readOnly('_router.currentRouteName'),
+
+  /**
+     Current URL for the application.
+
+     @property currentURL
+     @type String
+     @public
+   */
   currentURL: readOnly('_router.currentURL'),
+
+  /**
+     Location object for the application.
+
+     @property location
+     @type String
+     @public
+   */
   location: readOnly('_router.location'),
+
+  /**
+     Root URL of the current application.
+
+     @property rootURL
+     @type String
+     @public
+   */
   rootURL: readOnly('_router.rootURL'),
   _router: null,
 
